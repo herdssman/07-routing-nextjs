@@ -4,7 +4,7 @@ import { Tag } from '@/types/tag';
 
 export const tags: Tag[] = ["Work", "Personal", "Meeting", "Shopping", "Todo"];
 
-const SidebarNotes = () => {
+export const SidebarNotes = () => {
 
     return (
         <ul className={css.menuList}>

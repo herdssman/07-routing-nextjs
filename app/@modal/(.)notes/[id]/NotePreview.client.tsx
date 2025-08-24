@@ -11,7 +11,7 @@ interface NotePreviewProps {
     id: string;
 }
 
-const NotePreview = ({ id }: NotePreviewProps) => {
+export const NotePreview = ({ id }: NotePreviewProps) => {
     
     const router = useRouter();
 

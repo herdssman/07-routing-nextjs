@@ -6,7 +6,7 @@ interface LayoutNotesProps {
     modal: React.ReactNode
 }
 
-const LayoutNotes = ({ children, sidebar, modal }: LayoutNotesProps) => {
+export const LayoutNotes = ({ children, sidebar, modal }: LayoutNotesProps) => {
     return (
         <div className={css.container}>
             <aside className={css.sidebar}>{sidebar}</aside>
