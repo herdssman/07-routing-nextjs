@@ -3,11 +3,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
-    padding: 0;
+    row-gap: 40px;
+    padding: 2px 26px;
     margin: 0;
     list-style: none;
     justify-content: flex-start;
     align-items: center;
+    overflow-y: auto;
+    max-height: 94vh;
+    scrollbar-width: none
 }
 
 .listItem {
@@ -20,8 +24,7 @@
     flex-direction: column;
     justify-content: center;
     height: 250px;
-    width: 274px;
-    
+    width: 260px;
 }
 
 .title {

@@ -102,19 +102,3 @@ export async function fetchNoteById(id: string) {
     );
     return response.data;
 }
-
-export async function getTags() {
-
-    const response = await axios.get<NoteServiceProps>(`/notes`,
-        {
-            headers: {
-                Authorization: `Bearer ${NOTEHUB_TOKEN}`,
-            }
-        }
-    );
-    const notes = response.data.notes;
-
-    const tags = Array.from(new Set(notes.map((note) => note.tag))) as Tag[];
-
-    return tags;
-} 
