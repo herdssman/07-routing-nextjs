@@ -4,7 +4,7 @@ import { Tag } from '@/types/tag';
 import { tags } from '../@sidebar/default';
 
 interface SlugProps {
-    params: { slug?: string[] };
+    params: Promise<{ slug?: string[] }>;
 }
 
 export default async function NotesPage({ params }: SlugProps) {
