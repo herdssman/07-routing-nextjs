@@ -4,4 +4,4 @@ export const DefaultModal = () => {
 
 }
 
-export default DefaultModal
+export default DefaultModal;

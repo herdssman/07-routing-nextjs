@@ -64,4 +64,4 @@ export const NotePreview = ({ id }: NotePreviewProps) => {
     )
 }
 
-export default NotePreview
+export default NotePreview;

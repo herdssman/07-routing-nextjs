@@ -20,4 +20,4 @@ export const SidebarNotes = () => {
     )
 }
 
-export default SidebarNotes
+export default SidebarNotes;
