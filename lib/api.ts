@@ -93,12 +93,17 @@ export async function deleteNote(noteId: string): Promise<Note> {
 
 export async function fetchNoteById(id: string): Promise<Note> {
 
-     const response = await axios.get<Note>(`/notes/${id}`,
+    try {
+        const response = await axios.get<Note>(`/notes/${id}`,
             {
                 headers: {
                     Authorization: `Bearer ${NOTEHUB_TOKEN}`,
                 },
             }
-    );
-    return response.data;
+        );
+        return response.data;
+
+    } catch {
+        throw new Error("Failed to load this note. Please, ensure your connection and try again");
+    }
 }
